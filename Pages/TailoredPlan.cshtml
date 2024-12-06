@@ -1,0 +1,15 @@
+@page "/TailoredPlan"
+@model WorkoutApp.Pages.TailoredPlanModel
+@{
+    ViewData["Title"] = "Welcome";
+}
+
+<div class ="text-center index-background">
+    <h1>Hello, @Model.Name!</h1>
+    <h2>Below is your Tailored Program</h2>
+    
+            @foreach (var exercise in Model.TailoredPlan)
+        {
+            <li>@exercise</li>
+        }
+</div>

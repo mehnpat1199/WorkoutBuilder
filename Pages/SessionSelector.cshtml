@@ -1,0 +1,23 @@
+@page "/SessionSelector"
+@model WorkoutApp.Pages.SessionSelector
+@{
+    ViewData["Title"] = "Enter Name";
+}
+
+
+<div class="text-center index-background" >
+    <h1>Hello, @Model.Name</h1>
+    <h2 class="black-text">Please select what you would like to train using the buttons below:</h2>
+<form method="post" asp-page="SessionSelector">
+    <label><input type="checkbox" name="BodyParts" value="Chest"> Chest</label><br>
+    <label><input type="checkbox" name="BodyParts" value="Back"> Back</label><br>
+    <label><input type="checkbox" name="BodyParts" value="Legs"> Legs</label><br>
+    <label><input type="checkbox" name="BodyParts" value="Chest"> Biceps</label><br>
+    <label><input type="checkbox" name="BodyParts" value="Chest"> Triceps</label><br>
+    <label><input type="checkbox" name="BodyParts" value="Back"> Glutes</label><br>
+    <label><input type="checkbox" name="BodyParts" value="Legs"> Hamstrings</label><br>
+    <label><input type="checkbox" name="BodyParts" value="Legs"> Quads</label><br> 
+    <button type="submit">Create Session</button>
+</form>
+
+</div>
